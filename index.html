@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bugisu Junior School</title>
+    <link rel="stylesheet" href="styles/about.css">
     <link rel="shortcut icon" href="images/badge.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="gallery-animations.css"> <!-- Link to the new CSS file -->
@@ -27,14 +28,14 @@
         <button class="nav-toggle" aria-label="Open menu">☰</button>
         <nav class="nav-links">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Academics</a></li>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Parents & Students</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" class="btn-apply">Apply Now</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/academics.html">Academics</a></li>
+            <li><a href="/admission.html">Admissions</a></li>
+            <li><a href="/parents-students.html">Parents & Students</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/apply.html" class="btn-apply">Apply Now</a></li>
           </ul>
         </nav>
       </header>
@@ -302,5 +303,16 @@
             <p>&copy; 2025 Bugisu Junior School. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+document.addEventListener("scroll", () => {
+    document.querySelectorAll("section").forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            section.classList.add("show");
+        }
+    });
+});
+</script>
+
 </body>
 </html>

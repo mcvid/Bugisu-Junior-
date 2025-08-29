@@ -1,0 +1,364 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* Hero */
+
+.about-hero {
+  background: url('/images/gd2.png') no-repeat center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.about-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+.about-hero .hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.about-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.ds{
+    justify-content: center;
+    display: grid;
+    padding-top: 100px;
+}
+/* Intro */
+.about-intro  {
+    height: 500px;
+  padding: 60px 20px ;
+  background: #f9f9f9;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+.about-intro h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: red;
+}
+.about-intro p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.3rem;
+  line-height: 1.7;
+padding-bottom: 80px;
+}
+
+/* Teachers */
+.teachers {
+  padding: 60px 20px;
+  text-align: center;
+}
+.teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.teacher img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  height: 300px;
+}
+.teacher img:hover {
+  transform: scale(1.05);
+}
+.teacher h4 {
+  margin: 10px 0 5px;
+}
+
+/* Gallery */
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f2f2f2;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-hero h1 { font-size: 2rem; }
+  .about-hero p { font-size: 1rem; }
+  .mission-vision { flex-direction: column; }
+}
+/* Mission & Vision */
+.mission-vision {
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+
+}
+.mission-vision .card {
+    
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.mission-vision .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Teachers */
+.teachers {
+  text-align: center;
+  margin: 50px 0;
+}
+.teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+.teacher-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.teacher-card:hover {
+  transform: translateY(-10px);
+}
+.teacher-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Gallery */
+.gallery {
+  margin: 50px 0;
+  text-align: center;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.gallery-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.gallery-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-card:hover {
+  transform: scale(1.05);
+}
+.gallery-card p {
+  padding: 10px;
+  font-weight: bold;
+}
+/* Section Headings */
+.special-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Card Grid */
+.mission-vision .card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.mission-vision .card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mission-vision .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission-vision .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Section title */
+.special {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.special-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: red;
+  font-family: 'Georgia', serif;
+}
+
+/* Card layout */
+.special-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* Card image */
+.card-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.08);
+}
+
+/* Card text */
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: #34495e;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+/* Import a minimal, elegant font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap');
+
+.qt {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem 2.5rem;
+  background: #f9fafb; /* light neutral background */
+  border-left: 5px solid navy; /* accent line (blue, you can change) */
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.qt p {
+  font-family: 'Playfair Display', serif; /* elegant serif for the quote */
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: #374151; /* dark gray, not harsh black */
+  margin: 0;
+  position: relative;
+}
+
+/* Add decorative quote marks */
+.qt p::before,
+.qt p::after {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: red;
+  position: absolute;
+}
+
+.qt p::before {
+  content: "“";
+  left: -10px;
+  top: -10px;
+}
+
+.qt p::after {
+  content: "”";
+  right: -10px;
+  bottom: -10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
