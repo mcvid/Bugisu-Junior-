@@ -1,0 +1,5 @@
+- [x] Update apply.html: add id="contactForm" to form, add name attributes to inputs
+- [x] Update contact.html: add id="contactForm" to form, add name attributes to inputs
+- [x] Update apply.html and contact.html: add script tag for footer.js
+- [x] Update index.js: remove the form submit handler for .contact-form
+- [x] Update footer.js: add client-side validation logic before sending form data
