@@ -185,10 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive Tweaks */
-@media (max-width: 768px) {
-  .academics-hero h1 { font-size: 2rem; }
-  .resource-card { width: 80%; }
-}
+
 /* ===== Responsive Tweaks ===== */
 
 /* Tablet (≤ 992px) */
@@ -209,10 +206,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .stories-container {
     grid-template-columns: 1fr 1fr;
-    margin: 20px;
+    
   }
   .story-card {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
