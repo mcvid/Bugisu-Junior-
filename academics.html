@@ -14,6 +14,7 @@
   crossorigin="anonymous" 
   referrerpolicy="no-referrer" 
 />
+<link rel="stylesheet" href="styles/admisiion.css">
     <!-- Poppins for headings, Roboto for body -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
@@ -35,6 +36,132 @@
           </ul>
         </nav>
       </header>
+     <!-- ===== Academics Page ===== -->
+
+<!-- Hero -->
+<section class="academics-hero">
+  <h1>Our Academics</h1>
+  <p>
+    At Bugisu Junior School, we nurture intellectual curiosity and creativity. 
+    Our academic programs combine discipline, innovation, and practical learning 
+    to prepare future leaders.
+  </p>
+</section>
+
+<!-- Curriculum -->
+<section class="curriculum reveal">
+  <h2 class="section-title">Curriculum Overview</h2>
+  <div class="curriculum-container">
+    <div class="curriculum-card">
+      <i class="fa-solid fa-book-open"></i>
+      <h3>Languages</h3>
+      <p>English, Luganda & French with a focus on communication and culture.</p>
+    </div>
+    <div class="curriculum-card">
+      <i class="fa-solid fa-calculator"></i>
+      <h3>Mathematics</h3>
+      <p>Problem-solving and real-life applications of numbers.</p>
+    </div>
+    <div class="curriculum-card">
+      <i class="fa-solid fa-flask"></i>
+      <h3>Science</h3>
+      <p>Hands-on experiments and exploration of the natural world.</p>
+    </div>
+    <div class="curriculum-card">
+      <i class="fa-solid fa-paint-brush"></i>
+      <h3>Arts & Music</h3>
+      <p>Fostering creativity through painting, music, and culture.</p>
+    </div>
+    <div class="curriculum-card">
+      <i class="fa-solid fa-futbol"></i>
+      <h3>Sports</h3>
+      <p>Discipline, teamwork, and physical health through games.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Methodology -->
+<section class="methodology reveal">
+  <h2 class="section-title">Our Teaching Approach</h2>
+  <div class="methodology-container">
+    <div class="method-card" style="background-image: url('images/interactive.jpg');">
+      <h3>Interactive Learning</h3>
+    </div>
+    <div class="method-card" style="background-image: url('images/student.jpg');">
+      <h3>Student-Centered Approach</h3>
+    </div>
+    <div class="method-card" style="background-image: url('images/miss.png');">
+      <h3>Practical Assessments</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Academic Stories -->
+<section class="stories reveal">
+  <h2 class="section-title">Academic Stories</h2>
+  <div class="stories-container">
+    <div class="story-card">
+      <img src="images/lib.png" alt="Student Achievement">
+      <h3>Jane’s Science Fair Victory</h3>
+      <p>Jane represented our school and won the Regional Science Fair with her renewable energy project.</p>
+    </div>
+    <div class="story-card">
+      <img src="teacher1.jpg" alt="Teacher Spotlight">
+      <h3>Mr. Okello’s Innovation</h3>
+      <p>Our Science teacher introduced hands-on experiments that boosted interest in STEM subjects by 40%.</p>
+    </div>
+    <div class="story-card">
+      <img src="student2.jpg" alt="Debate Team">
+      <h3>National Debate Champions</h3>
+      <p>Our debate team secured first place in the National Junior Schools Debate Championship.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Resources -->
+<section class="resources reveal">
+  <h2 class="section-title"> Academic Resources</h2>
+  <div class="resources-container">
+    <div class="resource-card">
+      <i class="fa-solid fa-file-pdf"></i>
+      <h3>Syllabus</h3>
+      <p>Download our full academic syllabus.</p>
+      <a href="syllabus.pdf" class="btn">Download</a>
+    </div>
+    <div class="resource-card">
+      <i class="fa-solid fa-book"></i>
+      <h3>Library Access</h3>
+      <p>Explore thousands of e-books and journals online.</p>
+      <a href="/library" class="btn">Visit Library</a>
+    </div>
+    <div class="resource-card">
+      <i class="fa-solid fa-video"></i>
+      <h3>Learning Videos</h3>
+      <p>Watch engaging lessons and recorded classes.</p>
+      <a href="/videos" class="btn">Watch Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements -->
+<section class="achievements reveal">
+  <h2 class="section-title">Achievements & Performance</h2>
+  <div class="achievements-container">
+    <div class="achieve-card">
+      <h3>98%</h3>
+      <p>Pass Rate</p>
+    </div>
+    <div class="achieve-card">
+      <h3>🏆</h3>
+      <p>Regional Science Fair Winners</p>
+    </div>
+    <div class="achieve-card">
+      <h3>📚</h3>
+      <p>5,000+ Books in Library</p>
+    </div>
+  </div>
+</section>
+
      <footer id="school-footer">
         <div class="footer-content">
             <div class="school-info">
@@ -106,5 +233,18 @@
             <p>&copy; 2025 Bugisu Junior School. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Scroll reveal animation
+window.addEventListener("scroll", () => {
+  document.querySelectorAll(".reveal").forEach((el) => {
+    const windowHeight = window.innerHeight;
+    const revealTop = el.getBoundingClientRect().top;
+    if (revealTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
+
+    </script>
 </body>
 </html>

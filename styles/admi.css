@@ -1,0 +1,111 @@
+.admissions-hero {
+  background: url("/images/admin2.png") no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.why-choose .choose-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.choose-card {
+  background: white;
+  padding: 40px;
+  border-left: 5px solid red;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.choose-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.application-form form {
+  max-width: 700px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+.application-form label {
+  font-weight: bold;
+}
+.application-form input, .application-form select, .application-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.application-form button {
+  background: red;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.application-form button:hover { background: navy; }
+
+.table-wrapper {
+  overflow-x: auto;
+}
+.fees table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+}
+.fees th, .fees td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+.fees th {
+  background: navy;
+  color: white;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.step {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 4px solid red;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  min-width: 180px;
+  text-align: center;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, red, navy);
+  color: white;
+}
+.cta .btn {
+  background: white;
+  padding: 12px 25px;
+  color: navy;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cta .btn:hover { background: #f1f1f1; }
+
+@media (max-width: 768px) {
+  .choose-container, .process-steps {
+    flex-direction: column;
+  }
+}

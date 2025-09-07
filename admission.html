@@ -14,6 +14,7 @@
   crossorigin="anonymous" 
   referrerpolicy="no-referrer" 
 />
+<link rel="stylesheet" href="styles/admi.css">
     <!-- Poppins for headings, Roboto for body -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
@@ -35,6 +36,104 @@
           </ul>
         </nav>
       </header>
+      <main class="admissions">
+  <!-- Hero -->
+  <section class="admissions-hero">
+    <h1>Admissions at Bugisu Junior School</h1>
+    <p>Discover a learning journey that shapes bright futures. Enroll today!</p>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose">
+    <h2>Why Choose Bugisu Junior</h2>
+    <div class="choose-container">
+      <div class="choose-card">📘 Quality Education</div>
+      <div class="choose-card">👩‍🏫 Experienced Teachers</div>
+      <div class="choose-card">🏫 Safe & Supportive Environment</div>
+      <div class="choose-card">⚽ Balanced Co-Curriculars</div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process">
+    <h2>Admissions Process</h2>
+    <div class="process-steps">
+      <div class="step">📄 Submit Application</div>
+      <div class="step">🔍 Review</div>
+      <div class="step">👥 Interview/Assessment</div>
+      <div class="step">✅ Acceptance</div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="application-form">
+    <h2>Apply Now</h2>
+    <form id="admissionsForm">
+      <label>Student's Full Name</label>
+      <input type="text" required>
+
+      <label>Parent/Guardian Name</label>
+      <input type="text" required>
+
+      <label>Date of Birth</label>
+      <input type="date" required>
+
+      <label>Class Applying For</label>
+      <select required>
+        <option value="">-- Select Class --</option>
+        <option>Primary 1</option>
+        <option>Primary 2</option>
+        <option>Primary 3</option>
+        <option>Primary 4</option>
+        <option>Primary 5</option>
+        <option>Primary 6</option>
+        <option>Primary 7</option>
+      </select>
+
+      <label>Parent's Email</label>
+      <input type="email" required>
+
+      <label>Contact Number</label>
+      <input type="tel" required>
+
+      <label>Message or Notes</label>
+      <textarea></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Fees Structure -->
+  <section class="fees">
+    <h2>Fees Structure</h2>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Class</th>
+          <th>Tuition</th>
+          <th>Meals</th>
+          <th>Boarding</th>
+          <th>Total</th>
+        </tr>
+        <tr><td>Primary 1</td><td>500,000</td><td>150,000</td><td>600,000</td><td>1,250,000</td></tr>
+        <tr><td>Primary 2</td><td>520,000</td><td>150,000</td><td>600,000</td><td>1,270,000</td></tr>
+        <tr><td>Primary 3</td><td>540,000</td><td>150,000</td><td>600,000</td><td>1,290,000</td></tr>
+        <tr><td>Primary 4</td><td>560,000</td><td>160,000</td><td>620,000</td><td>1,340,000</td></tr>
+        <tr><td>Primary 5</td><td>580,000</td><td>160,000</td><td>620,000</td><td>1,360,000</td></tr>
+        <tr><td>Primary 6</td><td>600,000</td><td>170,000</td><td>640,000</td><td>1,410,000</td></tr>
+        <tr><td>Primary 7</td><td>620,000</td><td>170,000</td><td>640,000</td><td>1,430,000</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Begin Your Journey Today!</h2>
+    <a href="#admissionsForm" class="btn">Apply Now</a>
+  </section>
+</main>
+
+
     <footer id="school-footer">
         <div class="footer-content">
             <div class="school-info">
