@@ -1,0 +1,113 @@
+/* Hero */
+.portal-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #c1121f, #003f63);
+  color: white;
+}
+.portal-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 1.5rem;
+  background: #c1121f;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background .3s;
+}
+.cta-btn:hover { background: #9b0d18; }
+
+/* Features */
+.portal-features {
+  padding: 3rem 2rem;
+}
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  flex: 1 1 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform .3s;
+}
+.feature-card:hover { transform: translateY(-5px); }
+
+/* Announcements */
+.portal-announcements {
+  padding: 2rem;
+  background: #f7f7f7;
+  text-align: center;
+}
+.portal-announcements ul {
+  list-style: none;
+  padding: 0;
+}
+.portal-announcements li {
+  margin: .5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Resources */
+.portal-resources {
+  padding: 3rem 2rem;
+}
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+.resource-card {
+  padding: 1.5rem;
+  background: white;
+  border-left: 5px solid #c1121f;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform .3s;
+}
+.resource-card:hover { transform: scale(1.05); }
+
+/* Testimonials */
+.portal-testimonials {
+  padding: 3rem 2rem;
+  background: #f1f1f1;
+  text-align: center;
+}
+.testimonial {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  font-style: italic;
+  color: #333;
+}
+.testimonial span {
+  display: block;
+  margin-top: .5rem;
+  font-weight: bold;
+}
+
+/* CTA */
+.portal-cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #003f63, #c1121f);
+  color: white;
+}
+
+/* Animations on scroll */
+.reveal { opacity: 0; transform: translateY(30px); transition: all .8s ease; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .portal-hero h1 { font-size: 2rem; }
+  .feature-grid, .resource-grid { flex-direction: column; }
+}
